@@ -130,8 +130,8 @@
 
                     <div class="flex flex-row-reverse justify-between">
 
-                        <div class="flex">
-                            <x-filament::button color="gray" class="mr-2" x-on:click="isOpen = false">
+                        <div class="flex gap-3">
+                            <x-filament::button color="gray" x-on:click="isOpen = false">
                                 {{ Str::ucfirst(__('filament-croppie::messages.modal.croppie-image.cancel')) }}
                             </x-filament::button>
 
