@@ -67,8 +67,11 @@ class Croppie extends FileUpload
         $this->visibility('public');
 
         $this->acceptedFileTypes([
-            "image/png"," image/gif","image/jpeg","image/webp"
+            "image/png", "image/gif", "image/jpeg", "image/webp", "image/heic", "image/heif",
+            "image/bmp", "image/tiff", "image/svg+xml", "image/x-icon", "image/vnd.microsoft.icon",
+            "image/jp2", "image/jxr", "image/apng"
         ]);
+
 
         $this->imageName(Str::uuid()->toString());
 
